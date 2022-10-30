@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <!-- EXERCISE 1 -->
+    <section class="exercise-1">
+      <header><h1>Date Searcher</h1></header>
+      <div class="date-searcher-input">
+        <h2>Please input your date!</h2>
+        <input
+          type="number"
+          name="day"
+          id="ex1-day"
+          placeholder="Enter day"
+          min="1"
+          max="31"
+        />
+        <input
+          type="number"
+          name="month"
+          id="ex1-month"
+          placeholder="Enter month"
+          min="1"
+          max="12"
+        />
+        <input
+          type="number"
+          name="year"
+          id="ex1-year"
+          placeholder="Enter year"
+        />
+      </div>
+      <button id="btnDateChecker" onclick="dateChecker()">confirm</button>
+      <div class="date-searcher-result">
+        <p id="date-searcher-result-invalid"></p>
+        <p>The previous date: <span id="ex1-prev-date"></span></p>
+        <p>The next date: <span id="ex1-next-date"></span></p>
+      </div>
+    </section>
+    <!-- EXERCISE 1 END -->
+
+    <!-- EXERCISE 2 -->
+    <section class="exercise-2">
+      <header>
+        <h1>---------------------</h1>
+        <h1>Number of day checker</h1>
+      </header>
+      <div class="NOD-input">
+        <h2>Please input your month and year</h2>
+        <input
+          type="number"
+          name="month"
+          id="ex2-month"
+          placeholder="Enter Month"
+        />
+        <input
+          type="number"
+          name="year"
+          id="ex2-year"
+          placeholder="Enter Year"
+        />
+      </div>
+      <button id="btnNODchecker" onclick="numOfDayChecker()">Check!</button>
+      <div class="NOD-result">
+        <h2 id="NOD-result">
+          This month has <span id="NOD-final-result"></span> days!
+        </h2>
+      </div>
+    </section>
+    <!-- EXERCISE 2 END -->
+
+    <!-- EXERCISE 3 -->
+    <section class="exercise-3">
+      <header>
+        <h1>-------------------</h1>
+        <h1>Number spelling</h1>
+      </header>
+      <div class="three-digit-number-spelling-input">
+        <input
+          type="number"
+          max="999"
+          min="100"
+          placeholder="Your number"
+          id="ex3-number"
+        />
+      </div>
+      <button id="btnNumberSpelling" onclick="numberSpelling()">Spell!</button>
+      <div class="three-digit-number-spelling-result">
+        <h2 id="three-digit-number-spelling-final-result"></h2>
+      </div>
+    </section>
+    <!-- EXERCISE 3 END -->
+
+    <!-- EXERCISE 4 -->
+    <section class="exercise-4">
+      <header>
+        <h1>--------------------</h1>
+        <h1>Who lives farthest?</h1>
+      </header>
+      <div class="coordination-input">
+        <div class="coordination-input-person-1">
+          <h2>Please type in first student's name?</h2>
+          <input type="text" id="firstStudentName" />
+          <h2>Please type in the coordination of the first student</h2>
+          <input type="number" id="firstStudentX" placeholder="X" />
+          <input type="number" id="firstStudentY" placeholder="Y" />
+        </div>
+        <div class="coordination-input-person-2">
+          <h2>Please type in second student's name?</h2>
+          <input type="text" id="secondStudentName" />
+          <h2>Please type in the coordination of the second student</h2>
+          <input type="number" id="secondStudentX" placeholder="X" />
+          <input type="number" id="secondStudentY" placeholder="Y" />
+        </div>
+        <div class="coordination-input-person-3">
+          <h2>Please type in third student's name?</h2>
+          <input type="text" id="thirdStudentName" />
+          <h2>Please type in the coordination of the third student</h2>
+          <input type="number" id="thirdStudentX" placeholder="X" />
+          <input type="number" id="thirdStudentY" placeholder="Y" />
+        </div>
+        <div class="coordination-input-uni">
+          <h2>Please type in the coordination of the uni</h2>
+          <input type="number" id="uniX" placeholder="X" />
+          <input type="number" id="uniY" placeholder="Y" />
+        </div>
+        <button id="btnDistanceCheck" onclick="distanceChecker()">Check</button>
+        <div class="distanceCheck-result">
+          <h2 id="distanceCheck-result">
+            Mr/Ms <span id="farthestLivingStudentName"></span> lives farthest
+            from the uni! (<span id="distanceMax1"></span> km)
+          </h2>
+          <h2 id="same-distance">
+            They are all living at same distance from the uni! (<span
+              id="distanceMax2"
+            ></span>
+            km)
+          </h2>
+        </div>
+      </div>
+    </section>
+    <!-- EXERCISE 4 END -->
+    <script src="./index.js"></script>
+  </body>
+</html>
